@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+* {
+margin:0;
+padding:0;
+font-family: "Poppins", sans-serif
+}
+
+
+/* HEADER START */
+header {
+height: 15vh;
+background-color: #999999
+}
+/* HEADER FINISH */
+
+/* WELCOME START */
+#welcome {
+background-color: gray;
+height: fit-content;
+}
+
+.welcome.container {
+display: flex;
+justify-content: center;
+gap: 30px;
+padding: 50px;
+}
+
+.welcome-text > h2 {
+font-size: 35px;
+}
+.welcome-text {
+font-weight: 200;
+}
+
+.welcome-text {
+padding: 30px;
+width: 30%;
+background-color: #454545;
+color: white;
+border-radius: 10px 30px;
+}
+
+.welcome-image {
+margin: 15px;
+border-radius: 20px;
+}
+
+/* WELCOME FINISH */
