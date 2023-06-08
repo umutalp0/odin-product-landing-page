@@ -15,6 +15,7 @@ html {
     --bg-color1: #1F2937;
     --bg-color2: #E5E7EB;
     --color1: #3882F6;
+    --color2: #3e516b;
     --header-color1: #F9FAF8;;
 }
 
@@ -33,6 +34,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 99;
 }
 
 .header.logo {
@@ -58,6 +60,11 @@ header {
 
 #nav-bar > ul > li {
     margin-left: 10%;
+    transition: 0.5s ease-in-out
+}
+
+#nav-bar > ul > li:hover {
+    transform: scale(1.01)
 }
 
 #nav-bar > ul > li > a {
@@ -76,6 +83,7 @@ header {
 /* WELCOME START */
 #welcome {
     padding-top: 10vh;
+    padding-bottom: 5vh;
     background-color: var(--bg-color1);
     height: fit-content;
 }
@@ -85,10 +93,11 @@ header {
     justify-content: center;
     gap: 30px;
     padding: 50px;
+    margin-top: 5vh;
 }
 
 .welcome-text > h2 {
-    font-size: 35px;
+    font-size: 45px;
     color: var(--header-color1);
     text-shadow: 2px 4px 4px var(--bg-color1);
     font-style: italic;
@@ -123,14 +132,15 @@ header {
     border: none;
 }
 
-.btn.welcome:hover {
+.btn:hover {
     background-color: var(--bg-color2);
     color: var(--color1);
 }
 
 .welcome-image {
     margin: 15px;
-    border-radius: 20px;
+    border-radius: 5px;
+    filter: sepia(100%) saturate(0%) brightness(80%) hue-rotate(180deg);
 }
 
 
@@ -149,6 +159,7 @@ header {
     font-size: 40px;
     font-weight: bold;
     padding: 5.5%;
+    text-shadow: 5px 5px var(--bg-color2)
 
 }
 
@@ -170,6 +181,8 @@ header {
     margin-bottom: 7%;
 }
 
+
+
 .about.item-container
 {
     display: flex;
@@ -178,7 +191,21 @@ header {
     align-items: center;
     text-align: center;
     margin-bottom: auto;
+    background-color: var(--bg-color2);
+    padding: 2.5%;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
 }
+
+.about.item-container:hover {
+    background: var(--color2);
+    color: var(--header-color1);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 
 /* ABOUT FINISH */
 /* CONTACTS START */
@@ -190,73 +217,26 @@ header {
     background: var(--bg-color2)
 }
 
-.contact.container {
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 8%;
-    width: 50%;
-    height: 60%;
-    border-radius: 15px;
-    background-color: var(--header-color1);
-}
-
-.contact.email-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4%;;
-    width: 57.5%;
-    height: 90%;
-    margin-left: 3%;
-    border-radius: 15px;
-    background: var(--bg-color2);
-}
-
-.contact.contact-list {
-    width: 35%;
-    height: 90%;
-    margin-right: 3%;
-    border-radius: 15px;
-    background: var(--bg-color2)
-}
-
-
-.contacts-input1, .contacts-input2 {
-    border-radius: 15px;
-    border: none;
-    margin-left: 2%;
-    height: 8%;
-    width: 50%;
-    padding: 5px;
-}
-
-.contacts-textarea {
-    border: none;
-    border-radius: 15px;
-    margin-right: 2%;
-    margin-left: 2%;
-    height: 50%;
-    padding: 5px;
-}
-
-.btn.contacts {
-    margin: 2%;
-    color: white;
-    height: 20%;
-}
-
-.btn.contacts:hover {
-    background-color: var(--bg-color1);
-    color: white;
-}
-
-.contacts-label {
-    margin-left: 2%;
-}
-
-label:first-of-type {
-    margin-top: 3%;
-}
-
 /* CONTACTS FINISH */
+/* PLANS START */
+#plans {
+    height: 70vh;
+    background: var(--header-color1);
+}
+/* PLANS FINISH */
+/* FOOTER START */
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    background: var(--bg-color1);
+    color: var(--header-color1)
+}
+
+
+footer > h2 {
+    margin: 20px;
+    font-weight: 200;
+}
+
+/* FOOTER FINISH */
