@@ -223,6 +223,11 @@ header {
 #our-motto > h1 {
     margin: 10%;
     font-size: 2.5rem;
+    font-weight: 200;
+}
+
+#our-motto > h2 {
+    font-size: 2rem;
 }
 
 /* CONTACTS FINISH */
