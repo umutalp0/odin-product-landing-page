@@ -135,6 +135,7 @@ header {
 .btn:hover {
     background-color: var(--bg-color2);
     color: var(--color1);
+    scale: 1.06
 }
 
 .welcome-image {
@@ -210,18 +211,66 @@ header {
 /* ABOUT FINISH */
 /* CONTACTS START */
 
-#contacts {
+#our-motto {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     height: 70vh;
     background: var(--bg-color2)
 }
 
+#our-motto > h1 {
+    margin: 10%;
+    font-size: 2.5rem;
+}
+
 /* CONTACTS FINISH */
 /* PLANS START */
-#plans {
-    height: 70vh;
+#sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
     background: var(--header-color1);
+}
+
+.sign-up.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 40%;
+    margin: 4%;
+    background: var(--color1);
+    color: white;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px var(--color2);
+    transition: 0.4s ease-out;
+}
+
+.sign-up.container:hover {
+    scale: 1.06;
+    rotate: 1.5deg;
+}
+
+.btn.sign-up {
+    background-color: var(--color1);
+    border: 1px solid var(--header-color1);
+    border-radius: 5px;
+    height: 2rem;
+    margin: auto;
+    margin-right: 0;
+    transition: 0.3s ease-out;
+}
+
+.btn.sign-up:hover {
+    background-color: var(--header-color1);
+    color: var(--color1);
+    transform: scale(1.04);
+    font-size: 15px;
 }
 /* PLANS FINISH */
 /* FOOTER START */
